@@ -28,7 +28,7 @@
 	<div class="header-box">
 		<div class="header-text-box">
 			<h1>PRRI</h1>
-			<h2>Come towards the Palestinian people.</h2>
+			<h2>Stand with the People of Palestine</h2>
 		</div>
 		<a href="#" class="btn btn-full">Learn More</a>
 	</div>
@@ -136,6 +136,20 @@
 		{% endif %}
 	{%endfor%}
 </script>
+
+<script>
+document.querySelector('.btn-full').addEventListener('click', function(e) {
+  e.preventDefault();
+  Swal.fire({
+    title: 'About PRRI',
+    text: 'PRRI is a fundraising and volunteer platform dedicated to helping the people of Palestine through medical aid, hunger relief, and rebuilding support.',
+    icon: 'info',
+    confirmButtonText: 'Got it',
+    confirmButtonColor: '#5e7085'
+  });
+});
+</script>
+
 </body>
 
 </html>
